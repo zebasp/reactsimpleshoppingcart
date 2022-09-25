@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { IoAddCircle,IoRemoveCircle } from "react-icons/io5";
 
 class Counter extends Component {
   render() {
@@ -10,13 +11,13 @@ class Counter extends Component {
           onClick={() => this.props.onIncrement(this.props.counter)}
           className="btn btn-secondary btn.sm"
         >
-          Increment
+          <IoAddCircle />
         </button>
         <button
           onClick={() => this.props.onDelete(this.props.counter.id)}
           className="btn btn-danger btn-sm m-2"
         >
-          Delete
+          <IoRemoveCircle/>
         </button>
       </React.Fragment>
     );
